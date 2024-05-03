@@ -1,0 +1,87 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>my boxes page</title>
+    <style>
+        body {
+            background-color: brown;
+        }
+
+        div {
+            background: coral;
+            width: 250px;
+            height: 270px;
+            border: 10px solid pink;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px 10px 10px;
+            box-shadow: 20px 15px black;
+            border-bottom: 10px solid yellow;
+            border-top: 10px solid yellow;
+            text-align: center;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 100px;
+            left: 500px;
+        }
+
+        .static {
+            position: static;
+            z-index: 500;
+        }
+
+        .relative {
+            position: relative;
+            left: 400px;
+            top: -50px;
+            background: crimson;
+            z-index: -100;
+        }
+
+        .fixed {
+            position: fixed;
+            right: 0;
+            top: 0;
+            background: orange;
+        }
+
+        .absolute {
+            position: absolute;
+            right: 0;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sticky">
+        <p>sticky box</p>
+    </div>
+
+    <div class="static">
+        <p>static box</p>
+    </div>
+
+    <div class="relative">
+        <p>relative box</p>
+    </div>
+
+    <div class="fixed">
+        <p>fixed box</p>
+    </div>
+
+    <div class="absolute">
+        <p>absolute box</p>
+    </div>
+
+
+
+</body>
+<!--Im not sure what to put here but here it is!-->
+
+</html>
