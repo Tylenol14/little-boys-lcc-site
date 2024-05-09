@@ -1,0 +1,119 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>my grid page</title>
+    <style>
+        h1 {
+            text-align: center;
+            text-decoration: solid darkorange;
+            text-decoration-line: underline;
+            color: burlywood;
+            font-size: xx-large;
+        }
+
+        h2 {
+            text-align: center;
+            color: burlywood;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            font-size: 13px;
+        }
+
+        body {
+            background-color: peru;
+        }
+
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 2fr 1fr;
+                grid-template-rows: 200px 1fr 150px;
+                gap: 0px 10px;
+                grid-auto-flow: row;
+                grid-template-areas:
+                    "Head Head Head"
+                    "left Poop-fart right"
+                    "Feet Feet Feet";
+            }
+
+            header {
+                grid-area: Head;
+                background: chocolate;
+                border: 3px solid brown;
+            }
+
+            footer {
+                grid-area: Feet;
+                background: chocolate;
+                border: 3px solid brown;
+            }
+
+            main {
+                grid-area: Poop-fart;
+                position: sticky;
+                background: scroll orange;
+                border: 3px solid gold;
+                padding: 20px;
+            }
+
+            .right {
+                grid-area: right;
+                background: fixed gold;
+                border: 3px solid orange;
+            }
+
+            .left {
+                grid-area: left;
+                background: fixed gold;
+                border: 3px solid orange;
+            }
+
+   </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Page</h1>
+        </header>
+        <footer>
+            <h2>AHHHHHHH</h2>
+        </footer>
+        <main>
+            <h3>Contents</h3>
+            <p>To be fair, you have to have a very high IQ to understand Rick and Morty. The humour is extremely subtle, and without a solid grasp of theoretical physics most of the jokes will go over a typical viewers head. There's also Rick's nihilistic outlook, which is deftly woven into his characterisation- his personal philosophy draws heavily from Narodnaya Volya literature, for instance. The fans understand this stuff; they have the intellectual capacity to truly appreciate the depths of these jokes, to realise that they're not just funny- they say something deep about LIFE. As a consequence people who dislike Rick & Morty truly ARE idiots- of course they wouldn't appreciate, for instance, the humour in Rick's existential catchphrase "Wubba Lubba Dub Dub," which itself is a cryptic reference to Turgenev's Russian epic Fathers and Sons. I'm smirking right now just imagining one of those addlepated simpletons scratching their heads in confusion as Dan Harmon's genius wit unfolds itself on their television screens. What fools.. how I pity them.</p>
+        </main>
+        <div class="right">
+            <nav>
+                <ul>
+                    <li>Pwembus</li>
+                    <li>Pwembus</li>
+                    <li>Pwembus</li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="left">
+            <nav>
+                <ul>
+                    <li>Pwembo</li>
+                    <li>Pwembo</li>
+                    <li>Pwembo</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+</body>
+
+
+</html>
